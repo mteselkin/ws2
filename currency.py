@@ -21,8 +21,10 @@ def get_currency_rate(cval):
 
 # Основной код программы
 if __name__ == "__main__":
+    input(currency)
+    
     # Получаем текущий курс валюты
-    current_rate = get_currency_rate("доллара")
+    current_rate = get_currency_rate(currency)
     print(f"Текущий курс валюты: {current_rate}")
     
     # Запускаем бесконечный цикл
