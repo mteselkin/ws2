@@ -22,6 +22,7 @@ def get_currency_rate(cval):
 # Основной код программы
 if __name__ == "__main__":
     input(currency)
+    input(delta)
     
     # Получаем текущий курс валюты
     current_rate = get_currency_rate(currency)
@@ -36,6 +37,6 @@ if __name__ == "__main__":
         new_rate = get_currency_rate(currency)
         
         # Если произошло сильное изменение курса валюты, отправляем уведомление
-        if abs(new_rate - current_rate) > 2:
+        if abs(new_rate - current_rate) > delta:
             print(f"Сильное изменение курса валюты! Старое значение: {current_rate}, новое значение: {new_rate}")
             current_rate = new_rate
