@@ -21,6 +21,7 @@ def get_currency_rate(cval):
 
 # Основной код программы
 if __name__ == "__main__":
+    print("Введите код валюты")
     input(currency)
     
     # Получаем текущий курс валюты
