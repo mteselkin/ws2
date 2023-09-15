@@ -33,7 +33,7 @@ if __name__ == "__main__":
         time.sleep(15)
         
         # Получаем новый курс валюты
-        new_rate = get_currency_rate("доллара")
+        new_rate = get_currency_rate(currency)
         
         # Если произошло сильное изменение курса валюты, отправляем уведомление
         if abs(new_rate - current_rate) > 2:
