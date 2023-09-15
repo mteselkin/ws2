@@ -3,9 +3,9 @@ from bs4 import BeautifulSoup
 import time
 
 # Функция для получения курса валюты
-def get_currency_rate():
+def get_currency_rate(cval):
     # Адрес сайта, с которого мы будем получать данные
-    url = "https://www.google.com/search?q=курс+доллара+к+рублю"
+    url = "https://www.google.com/search?q=курс+"+cval+"+к+рублю"
     
     # Получаем содержимое страницы
     response = requests.get(url)
@@ -22,7 +22,7 @@ def get_currency_rate():
 # Основной код программы
 if __name__ == "__main__":
     # Получаем текущий курс валюты
-    current_rate = get_currency_rate()
+    current_rate = get_currency_rate("доллара")
     print(f"Текущий курс валюты: {current_rate}")
     
     # Запускаем бесконечный цикл
