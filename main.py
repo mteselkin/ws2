@@ -28,7 +28,7 @@ if __name__ == "__main__":
     # Запускаем бесконечный цикл
     while True:
         # Ждем 5 секунд
-        time.sleep(5)
+        time.sleep(10)
         
         # Получаем новый курс валюты
         new_rate = get_currency_rate()
